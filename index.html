@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto Glass Repair Tri-Cities WA | Windshield Replacement Kennewick Richland Pasco</title>
+  <meta name="description" content="Auto glass repair and windshield replacement in Kennewick, Richland, and Pasco WA. Mobile service — we come to you. Fast, affordable, same-day available. Call now for a free quote." />
+  <meta name="keywords" content="auto glass repair Tri-Cities, windshield replacement Kennewick, windshield repair Richland, auto glass Pasco WA, mobile windshield repair, cracked windshield repair Tri-Cities" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #0d1b2a;
+      --navy2:   #162436;
+      --navy3:   #1e3048;
+      --amber:   #f5a623;
+      --amber2:  #e8941a;
+      --white:   #ffffff;
+      --offwhite:#f4f6f9;
+      --gray:    #8a9bb0;
+      --text:    #d0daea;
+      --radius:  6px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--navy);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── KEYFRAMES ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulseBtn {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(245,166,35,.5); }
+      50%       { box-shadow: 0 0 0 12px rgba(245,166,35,0); }
+    }
+    @keyframes shimmer {
+      0%   { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+
+    .fadeUp { animation: fadeUp .65s ease both; }
+    .d1 { animation-delay: .1s; }
+    .d2 { animation-delay: .25s; }
+    .d3 { animation-delay: .4s; }
+    .d4 { animation-delay: .55s; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(13,27,42,.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid var(--amber);
+      padding: 0 5%;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-brand {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; font-size: 1.35rem; letter-spacing: .04em;
+      color: var(--white); text-decoration: none;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .nav-brand span { color: var(--amber); }
+    .nav-brand svg { flex-shrink: 0; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      font-size: .9rem; font-weight: 600; letter-spacing: .04em;
+      color: var(--text); text-decoration: none; text-transform: uppercase;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--amber); }
+    .nav-cta {
+      background: var(--amber); color: var(--navy);
+      font-weight: 700; font-size: .9rem; letter-spacing: .05em; text-transform: uppercase;
+      padding: 10px 22px; border-radius: var(--radius);
+      text-decoration: none; transition: background .2s, transform .15s;
+      animation: pulseBtn 2.5s ease infinite;
+    }
+    .nav-cta:hover { background: var(--amber2); transform: translateY(-1px); animation: none; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: .3s; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 88vh;
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 80px 5% 60px;
+      background:
+        linear-gradient(135deg, rgba(13,27,42,.97) 55%, rgba(22,36,54,.9) 100%),
+        url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80') center/cover no-repeat;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: repeating-linear-gradient(
+        90deg,
+        transparent, transparent 79px,
+        rgba(245,166,35,.04) 79px, rgba(245,166,35,.04) 80px
+      );
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(245,166,35,.15); border: 1px solid rgba(245,166,35,.4);
+      color: var(--amber); font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 20px; margin-bottom: 22px;
+      width: fit-content;
+    }
+    .hero h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; font-size: clamp(2.6rem, 6vw, 5rem);
+      line-height: 1.0; letter-spacing: .01em;
+      color: var(--white); margin-bottom: 22px; max-width: 700px;
+    }
+    .hero h1 em { color: var(--amber); font-style: normal; }
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.2rem); color: var(--text);
+      max-width: 540px; margin-bottom: 36px; line-height: 1.7;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--amber); color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 1.1rem; letter-spacing: .06em; text-transform: uppercase;
+      padding: 16px 34px; border-radius: var(--radius);
+      text-decoration: none; transition: background .2s, transform .15s;
+      animation: pulseBtn 2.5s ease 1s infinite;
+    }
+    .btn-primary:hover { background: var(--amber2); transform: translateY(-2px); animation: none; }
+    .btn-secondary {
+      background: transparent; border: 2px solid rgba(255,255,255,.3);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 1.1rem; letter-spacing: .06em; text-transform: uppercase;
+      padding: 16px 34px; border-radius: var(--radius);
+      text-decoration: none; transition: border-color .2s, color .2s, transform .15s;
+    }
+    .btn-secondary:hover { border-color: var(--amber); color: var(--amber); transform: translateY(-2px); }
+    .hero-trust {
+      margin-top: 50px;
+      display: flex; gap: 32px; flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex; align-items: center; gap: 10px;
+      font-size: .88rem; font-weight: 600; color: var(--gray);
+    }
+    .trust-item svg { color: var(--amber); flex-shrink: 0; }
+
+    /* ── STRIP ── */
+    .strip {
+      background: var(--amber);
+      padding: 16px 5%;
+      display: flex; gap: 40px; justify-content: center; flex-wrap: wrap;
+    }
+    .strip-item {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 1rem; letter-spacing: .05em; text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    /* ── SECTION SCAFFOLDING ── */
+    section { padding: 80px 5%; }
+    .section-label {
+      font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--amber); margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; font-size: clamp(1.9rem, 4vw, 3rem);
+      color: var(--white); line-height: 1.1; margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 1.05rem; color: var(--gray); max-width: 560px; line-height: 1.7;
+    }
+    .section-header { margin-bottom: 52px; }
+
+    /* ── SERVICES ── */
+    .services { background: var(--navy2); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--navy3);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 10px;
+      padding: 32px 28px;
+      transition: transform .2s, border-color .2s, box-shadow .2s;
+      position: relative; overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: var(--amber);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform .3s ease;
+    }
+    .service-card:hover { transform: translateY(-4px); border-color: rgba(245,166,35,.3); box-shadow: 0 12px 40px rgba(0,0,0,.4); }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon {
+      width: 52px; height: 52px; border-radius: 10px;
+      background: rgba(245,166,35,.12);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px; color: var(--amber);
+    }
+    .service-card h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 1.3rem; letter-spacing: .02em;
+      color: var(--white); margin-bottom: 10px;
+    }
+    .service-card p { font-size: .93rem; color: var(--gray); line-height: 1.65; }
+    .service-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      margin-top: 18px; font-size: .88rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+      color: var(--amber); text-decoration: none; transition: gap .2s;
+    }
+    .service-link:hover { gap: 10px; }
+
+    /* ── WHY US ── */
+    .why { background: var(--navy); }
+    .why-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: center;
+    }
+    .why-list { list-style: none; display: flex; flex-direction: column; gap: 24px; }
+    .why-item {
+      display: flex; gap: 18px; align-items: flex-start;
+    }
+    .why-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; font-size: 2.2rem; color: var(--amber);
+      line-height: 1; flex-shrink: 0; width: 44px;
+    }
+    .why-item h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 1.2rem; letter-spacing: .02em;
+      color: var(--white); margin-bottom: 6px;
+    }
+    .why-item p { font-size: .93rem; color: var(--gray); line-height: 1.65; }
+    .why-visual {
+      background: var(--navy2);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 12px; padding: 40px;
+      display: flex; flex-direction: column; gap: 24px;
+    }
+    .stat-row { display: flex; gap: 20px; }
+    .stat-box {
+      flex: 1; background: var(--navy3); border-radius: 8px; padding: 24px 20px;
+      text-align: center;
+    }
+    .stat-box .num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; font-size: 2.4rem; color: var(--amber); line-height: 1;
+    }
+    .stat-box .label { font-size: .82rem; color: var(--gray); margin-top: 6px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+    .area-tag-group { display: flex; flex-wrap: wrap; gap: 10px; }
+    .area-tag {
+      background: rgba(245,166,35,.1); border: 1px solid rgba(245,166,35,.25);
+      color: var(--amber); font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 20px;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials { background: var(--navy2); }
+    .testimonial-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--navy3); border: 1px solid rgba(255,255,255,.06);
+      border-radius: 10px; padding: 28px;
+    }
+    .stars { color: var(--amber); font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
+    .testimonial-card blockquote {
+      font-size: .97rem; color: var(--text); line-height: 1.7; font-style: italic;
+      margin-bottom: 20px;
+    }
+    .reviewer { display: flex; align-items: center; gap: 12px; }
+    .reviewer-avatar {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--amber), var(--amber2));
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1rem; color: var(--navy);
+    }
+    .reviewer-name { font-weight: 700; font-size: .9rem; color: var(--white); }
+    .reviewer-loc { font-size: .8rem; color: var(--gray); }
+
+    /* ── SERVICE AREA ── */
+    .service-area { background: var(--navy); }
+    .area-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px; margin-top: 40px;
+    }
+    .area-city {
+      background: var(--navy2); border: 1px solid rgba(255,255,255,.06);
+      border-radius: 8px; padding: 16px 20px;
+      display: flex; align-items: center; gap: 10px;
+      font-size: .9rem; font-weight: 600; color: var(--text);
+      transition: border-color .2s, color .2s;
+    }
+    .area-city svg { color: var(--amber); flex-shrink: 0; }
+    .area-city:hover { border-color: rgba(245,166,35,.4); color: var(--white); }
+
+    /* ── FAQ ── */
+    .faq { background: var(--navy2); }
+    .faq-list { max-width: 740px; display: flex; flex-direction: column; gap: 12px; }
+    details {
+      background: var(--navy3); border: 1px solid rgba(255,255,255,.07);
+      border-radius: 8px; overflow: hidden;
+    }
+    details[open] { border-color: rgba(245,166,35,.3); }
+    summary {
+      padding: 20px 24px; cursor: pointer;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 1.1rem; letter-spacing: .02em; color: var(--white);
+      list-style: none; display: flex; justify-content: space-between; align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+'; color: var(--amber); font-size: 1.4rem; font-weight: 400; flex-shrink: 0;
+      transition: transform .2s;
+    }
+    details[open] summary::after { transform: rotate(45deg); }
+    .faq-answer { padding: 0 24px 20px; font-size: .95rem; color: var(--gray); line-height: 1.7; }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      background: linear-gradient(135deg, var(--amber) 0%, var(--amber2) 100%);
+      padding: 64px 5%; text-align: center;
+    }
+    .cta-band h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; font-size: clamp(2rem, 4.5vw, 3.2rem);
+      color: var(--navy); line-height: 1.1; margin-bottom: 16px;
+    }
+    .cta-band p { font-size: 1.1rem; color: rgba(13,27,42,.75); max-width: 520px; margin: 0 auto 32px; }
+    .btn-dark {
+      background: var(--navy); color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 1.1rem; letter-spacing: .06em; text-transform: uppercase;
+      padding: 16px 36px; border-radius: var(--radius);
+      text-decoration: none; display: inline-block;
+      transition: background .2s, transform .15s;
+    }
+    .btn-dark:hover { background: var(--navy2); transform: translateY(-2px); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: rgba(0,0,0,.5);
+      border-top: 1px solid rgba(255,255,255,.06);
+      padding: 48px 5% 32px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px; margin-bottom: 40px;
+    }
+    .footer-brand p { font-size: .9rem; color: var(--gray); margin-top: 14px; line-height: 1.7; max-width: 280px; }
+    footer h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--white); margin-bottom: 16px;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: .9rem; color: var(--gray); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: var(--amber); }
+    .footer-contact-item { display: flex; align-items: center; gap: 10px; font-size: .9rem; color: var(--gray); margin-bottom: 10px; }
+    .footer-contact-item svg { color: var(--amber); flex-shrink: 0; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.07);
+      padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+      font-size: .82rem; color: var(--gray);
+    }
+    .footer-bottom a { color: var(--gray); text-decoration: none; }
+    .footer-bottom a:hover { color: var(--amber); }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ── MOBILE NAV MENU ── */
+    #mobile-menu {
+      display: none; flex-direction: column; gap: 0;
+      position: fixed; top: 64px; left: 0; right: 0;
+      background: var(--navy2); border-top: 2px solid var(--amber);
+      z-index: 99; padding: 20px 5%;
+    }
+    #mobile-menu.open { display: flex; }
+    #mobile-menu a {
+      padding: 14px 0; font-weight: 700; font-size: 1rem; letter-spacing: .04em; text-transform: uppercase;
+      color: var(--text); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.07);
+      transition: color .2s;
+    }
+    #mobile-menu a:hover { color: var(--amber); }
+    #mobile-menu .mob-cta {
+      margin-top: 16px; background: var(--amber); color: var(--navy);
+      text-align: center; padding: 14px; border-radius: var(--radius); font-size: 1.05rem;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .why-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      nav { padding: 0 4%; }
+      section { padding: 60px 4%; }
+      .hero { padding: 60px 4% 50px; }
+      .hero-btns { flex-direction: column; }
+      .btn-primary, .btn-secondary { text-align: center; }
+      .stat-row { flex-direction: column; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .strip { flex-direction: column; gap: 16px; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="#" class="nav-brand">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+      <path d="M14 2L3 8v12l11 6 11-6V8L14 2z" fill="rgba(245,166,35,.2)" stroke="#f5a623" stroke-width="1.5"/>
+      <path d="M8 13h12M14 10v6" stroke="#f5a623" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    Tri-Cities <span>&nbsp;Auto Glass</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#areas">Service Area</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="tel:5092340000" class="nav-cta">☎ Call Now</a>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div id="mobile-menu">
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#why" onclick="toggleMenu()">Why Us</a>
+  <a href="#areas" onclick="toggleMenu()">Service Area</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="tel:5092340000" class="mob-cta">☎ Call Now — Free Quote</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-badge fadeUp d1">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><circle cx="7" cy="7" r="3"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    Serving Kennewick · Richland · Pasco
+  </div>
+  <h1 class="fadeUp d1">Cracked Windshield?<br/><em>We Come to You.</em></h1>
+  <p class="fadeUp d2">Fast, affordable auto glass repair and windshield replacement across the Tri-Cities. Most repairs done in under an hour — at your home, office, or wherever you're parked.</p>
+  <div class="hero-btns fadeUp d3">
+    <a href="tel:5092340000" class="btn-primary">☎ Call for a Free Quote</a>
+    <a href="#services" class="btn-secondary">See All Services</a>
+  </div>
+  <div class="hero-trust fadeUp d4">
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l2.5 5 5.5.8-4 3.9.9 5.5L9 13.5l-4.9 2.7.9-5.5L1 6.8l5.5-.8L9 1z" fill="currentColor"/></svg>
+      Locally Trusted
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M5 9l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Insurance Accepted
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M9 4v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      Same-Day Available
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1C4.6 1 1 4.6 1 9s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 4v4l3 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      Mobile Service — We Come To You
+    </div>
+  </div>
+</section>
+
+<!-- ── STRIP ── -->
+<div class="strip">
+  <div class="strip-item">✓ Free Quotes</div>
+  <div class="strip-item">✓ OEM-Quality Glass</div>
+  <div class="strip-item">✓ Insurance Direct Billing</div>
+  <div class="strip-item">✓ Lifetime Workmanship Warranty</div>
+</div>
+
+<!-- ── SERVICES ── -->
+<section class="services" id="services">
+  <div class="section-header reveal">
+    <div class="section-label">What We Do</div>
+    <h2 class="section-title">Auto Glass Services in the Tri-Cities</h2>
+    <p class="section-sub">From a small chip to a full windshield replacement, our technicians handle it all — at your location, on your schedule.</p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="2" y="6" width="22" height="14" rx="3" stroke="currentColor" stroke-width="2"/><path d="M6 10h14M8 14h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <h3>Windshield Replacement</h3>
+      <p>Full windshield swap using OEM-match glass. We handle removal, installation, and seal — typically in 60–90 minutes at your location.</p>
+      <a href="#contact" class="service-link">Get a Quote →</a>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="10" stroke="currentColor" stroke-width="2"/><path d="M9 13s1 3 4 3 4-3 4-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="10" cy="10" r="1.5" fill="currentColor"/><circle cx="16" cy="10" r="1.5" fill="currentColor"/></svg>
+      </div>
+      <h3>Windshield Crack Repair</h3>
+      <p>Small crack or bullseye chip? We inject resin to stop it from spreading. Fast fix that keeps your glass — and wallet — intact.</p>
+      <a href="#contact" class="service-link">Get a Quote →</a>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="3" y="8" width="20" height="10" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 12h20" stroke="currentColor" stroke-width="1.5"/></svg>
+      </div>
+      <h3>Auto Glass Repair</h3>
+      <p>Side windows, rear windows, and quarter glass — if it's broken or cracked, we can fix or replace it. All makes and models.</p>
+      <a href="#contact" class="service-link">Get a Quote →</a>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M4 13a9 9 0 1 0 18 0 9 9 0 0 0-18 0z" stroke="currentColor" stroke-width="2"/><path d="M13 4v4M13 18v4M4 13h4M18 13h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <h3>Sunroof Glass Repair</h3>
+      <p>Cracked or shattered sunroof? We source replacement panels and seal them tight so leaks and drafts stay outside where they belong.</p>
+      <a href="#contact" class="service-link">Get a Quote →</a>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M5 8l3-5h10l3 5v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8z" stroke="currentColor" stroke-width="2"/><circle cx="13" cy="14" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+      </div>
+      <h3>Side Mirror Replacement</h3>
+      <p>Clipped in a parking lot or hit on the highway — we replace mirror glass and full mirror assemblies for a clean factory fit.</p>
+      <a href="#contact" class="service-link">Get a Quote →</a>
+    </div>
+
+    <div class="service-card reveal" style="border-color: rgba(245,166,35,.3); background: rgba(245,166,35,.05);">
+      <div class="service-icon" style="background: rgba(245,166,35,.2);">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M4 18V10l9-7 9 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="9" y="14" width="8" height="9" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+      </div>
+      <h3>Mobile Service — We Come To You</h3>
+      <p>Home, office, parking lot — wherever you are in the Tri-Cities, we bring the tools to you. No tow, no trip, no hassle.</p>
+      <a href="tel:5092340000" class="service-link" style="color: var(--amber);">Call to Book →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── WHY US ── -->
+<section class="why" id="why">
+  <div class="why-grid">
+    <div>
+      <div class="section-label reveal">Why Choose Us</div>
+      <h2 class="section-title reveal">The Tri-Cities Auto Glass Team That Shows Up</h2>
+      <ul class="why-list">
+        <li class="why-item reveal">
+          <div class="why-num">01</div>
+          <div>
+            <h4>We Come to Your Location</h4>
+            <p>No waiting at a shop. Our fully equipped mobile units serve Kennewick, Richland, Pasco, and surrounding areas — at your schedule.</p>
+          </div>
+        </li>
+        <li class="why-item reveal">
+          <div class="why-num">02</div>
+          <div>
+            <h4>Insurance Billing Done for You</h4>
+            <p>We work directly with most insurance carriers. If glass repair is covered, we handle the paperwork so you don't have to.</p>
+          </div>
+        </li>
+        <li class="why-item reveal">
+          <div class="why-num">03</div>
+          <div>
+            <h4>OEM-Quality Glass, Guaranteed</h4>
+            <p>We use dealer-equivalent glass that meets original manufacturer specs — because your windshield is a safety component, not just a window.</p>
+          </div>
+        </li>
+        <li class="why-item reveal">
+          <div class="why-num">04</div>
+          <div>
+            <h4>Lifetime Workmanship Warranty</h4>
+            <p>Every installation comes backed by our warranty. If the seal fails or something doesn't look right, we fix it. Period.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="why-visual reveal">
+      <div class="stat-row">
+        <div class="stat-box">
+          <div class="num">60<span style="font-size:1.4rem">min</span></div>
+          <div class="label">Avg. Service Time</div>
+        </div>
+        <div class="stat-box">
+          <div class="num">$0</div>
+          <div class="label">Cost for Insurance Claims</div>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-box">
+          <div class="num">★ 5.0</div>
+          <div class="label">Average Rating</div>
+        </div>
+        <div class="stat-box">
+          <div class="num">3</div>
+          <div class="label">Cities Covered</div>
+        </div>
+      </div>
+      <div>
+        <div class="section-label" style="margin-bottom: 10px;">Service Zones</div>
+        <div class="area-tag-group">
+          <span class="area-tag">Kennewick</span>
+          <span class="area-tag">Richland</span>
+          <span class="area-tag">Pasco</span>
+          <span class="area-tag">West Richland</span>
+          <span class="area-tag">Benton City</span>
+          <span class="area-tag">Prosser</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="testimonials">
+  <div class="section-header reveal">
+    <div class="section-label">What Customers Say</div>
+    <h2 class="section-title">Tri-Cities Drivers Trust Us</h2>
+  </div>
+  <div class="testimonial-grid">
+
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <blockquote>"I had a big rock chip on the highway and called in the morning. They came to my office in Kennewick the same afternoon. Total time start to finish was maybe 45 minutes. Fantastic service."</blockquote>
+      <div class="reviewer">
+        <div class="reviewer-avatar">DM</div>
+        <div>
+          <div class="reviewer-name">David M.</div>
+          <div class="reviewer-loc">Kennewick, WA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <blockquote>"My insurance covered the whole windshield replacement and these guys handled everything with the insurer directly. I didn't have to make a single call. Showed up on time, clean work, zero hassle."</blockquote>
+      <div class="reviewer">
+        <div class="reviewer-avatar">SR</div>
+        <div>
+          <div class="reviewer-name">Sarah R.</div>
+          <div class="reviewer-loc">Richland, WA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Cracked rear window on a Friday evening. They had a technician out to my house in Pasco the next morning. Price was fair, install was flawless. I've already referred two neighbors."</blockquote>
+      <div class="reviewer">
+        <div class="reviewer-avatar">JL</div>
+        <div>
+          <div class="reviewer-name">Jose L.</div>
+          <div class="reviewer-loc">Pasco, WA</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── SERVICE AREA ── -->
+<section class="service-area" id="areas">
+  <div class="section-header reveal">
+    <div class="section-label">Where We Work</div>
+    <h2 class="section-title">Mobile Auto Glass Service Across the Tri-Cities</h2>
+    <p class="section-sub">We dispatch throughout the greater Tri-Cities area. If you're unsure whether we cover your location, just call — we'll tell you straight.</p>
+  </div>
+  <div class="area-grid">
+    <div class="area-city reveal">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+      Kennewick, WA
+    </div>
+    <div class="area-city reveal">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+      Richland, WA
+    </div>
+    <div class="area-city reveal">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+      Pasco, WA
+    </div>
+    <div class="area-city reveal">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+      West Richland, WA
+    </div>
+    <div class="area-city reveal">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+      Benton City, WA
+    </div>
+    <div class="area-city reveal">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+      Prosser, WA
+    </div>
+    <div class="area-city reveal">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+      Finley, WA
+    </div>
+    <div class="area-city reveal">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+      Burbank, WA
+    </div>
+    <div class="area-city reveal">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+      Connell, WA
+    </div>
+    <div class="area-city reveal">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+      Othello, WA
+    </div>
+    <div class="area-city reveal">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+      Walla Walla, WA
+    </div>
+    <div class="area-city reveal">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+      Hermiston, OR
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq" id="faq">
+  <div class="section-header reveal">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">Auto Glass FAQ</h2>
+  </div>
+  <div class="faq-list reveal">
+    <details>
+      <summary>Does my insurance cover windshield replacement?</summary>
+      <div class="faq-answer">Many comprehensive auto insurance policies cover glass repair and replacement with no out-of-pocket cost to you. Washington state does not waive the deductible on glass claims, but many policies have a separate, lower glass deductible. Call us and we'll help you check your coverage before we start any work.</div>
+    </details>
+    <details>
+      <summary>Can a cracked windshield actually be repaired, or does it need to be replaced?</summary>
+      <div class="faq-answer">Chips smaller than a quarter and cracks shorter than about 6 inches can usually be repaired with resin injection. Cracks larger than that, or anything in the driver's direct line of sight, typically require a full replacement. We'll give you an honest assessment when we look at it — no pressure to upgrade if a repair is the right call.</div>
+    </details>
+    <details>
+      <summary>How long does a windshield replacement take?</summary>
+      <div class="faq-answer">Most windshield replacements take 60–90 minutes from start to finish. After installation, we recommend leaving the car parked for at least an hour to let the adhesive cure fully before driving. We'll let you know the exact safe-drive-away time based on conditions that day.</div>
+    </details>
+    <details>
+      <summary>Do you come to my home or do I drive to you?</summary>
+      <div class="faq-answer">We come to you. Our mobile units are fully equipped to handle repairs and replacements at your home, workplace, or any parking lot in the Tri-Cities area. There's no shop to drive to — that's kind of the whole point.</div>
+    </details>
+    <details>
+      <summary>What areas do you serve?</summary>
+      <div class="faq-answer">We primarily serve Kennewick, Richland, and Pasco, plus surrounding communities including West Richland, Benton City, Prosser, Finley, Burbank, Connell, and Hermiston, OR. If you're not sure whether we cover your location, just call and we'll tell you right away.</div>
+    </details>
+    <details>
+      <summary>Is the glass you use as good as the original?</summary>
+      <div class="faq-answer">Yes. We use OEM-equivalent glass that meets the same safety and fit specifications as the glass that came from the factory. For newer vehicles with ADAS cameras and sensors in the windshield, we also handle proper recalibration so your safety systems work correctly after replacement.</div>
+    </details>
+  </div>
+</section>
+
+<!-- ── CTA BAND ── -->
+<section class="cta-band" id="contact">
+  <h2 class="reveal">Ready to Get Your Glass Fixed?</h2>
+  <p class="reveal">Call for a free quote. We'll tell you exactly what it costs and how fast we can get to you. No pressure, no surprises.</p>
+  <a href="tel:5092340000" class="btn-dark reveal">☎ Call Now — (509) 234-0000</a>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="nav-brand" style="font-size: 1.2rem;">
+        <svg width="24" height="24" viewBox="0 0 28 28" fill="none"><path d="M14 2L3 8v12l11 6 11-6V8L14 2z" fill="rgba(245,166,35,.2)" stroke="#f5a623" stroke-width="1.5"/><path d="M8 13h12M14 10v6" stroke="#f5a623" stroke-width="2" stroke-linecap="round"/></svg>
+        Tri-Cities <span>&nbsp;Auto Glass</span>
+      </a>
+      <p>Mobile auto glass repair and windshield replacement serving Kennewick, Richland, Pasco, and the greater Tri-Cities area of Washington state.</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul class="footer-links">
+        <li><a href="#services">Windshield Replacement</a></li>
+        <li><a href="#services">Windshield Crack Repair</a></li>
+        <li><a href="#services">Auto Glass Repair</a></li>
+        <li><a href="#services">Sunroof Glass</a></li>
+        <li><a href="#services">Side Mirror Replacement</a></li>
+        <li><a href="#services">Mobile Service</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <div class="footer-contact-item">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2h4l2 4-2 2a10 10 0 0 0 4 4l2-2 4 2v4a2 2 0 0 1-2 2C5.4 18 -2 10.6-2 2A2 2 0 0 1 2 0z" fill="currentColor"/></svg>
+        (509) 234-0000
+      </div>
+      <div class="footer-contact-item">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
+        Kennewick · Richland · Pasco, WA
+      </div>
+      <div class="footer-contact-item" style="margin-top: 6px;">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 4v4l3 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Mon–Sat 7am–7pm · Sun 8am–5pm
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Tri-Cities Auto Glass. All rights reserved.</span>
+    <span>The website connects you with local, licensed, and insured auto glass professionals. <a href="#">Privacy Policy</a> · <a href="#">Terms</a></span>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  }
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // Smooth close mobile menu on nav link click
+  document.querySelectorAll('#mobile-menu a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
