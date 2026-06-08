@@ -20,7 +20,7 @@
     "url": "https://tricitiesautoglass.com",
     "telephone": "(509) 234-0000",
     "priceRange": "$$",
-    "image": "https://tricitiesautoglass.com/logo.jpg",
+    "image": "https://tricitiesautoglass.com/logo.png",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Kennewick",
@@ -215,7 +215,7 @@
       padding: 80px 5% 60px;
       background:
         linear-gradient(135deg, rgba(13,27,42,.95) 50%, rgba(22,36,54,.85) 100%),
-        url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=1600&q=80') center/cover no-repeat;
+        url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80') center/cover no-repeat;
       position: relative; overflow: hidden;
     }
     .hero::before {
@@ -530,7 +530,17 @@
 <!-- ── NAV ── -->
 <nav>
   <a href="#" class="nav-brand">
-    <img src="logo.jpg" alt="Tri-Cities Auto Glass Logo" />
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Hexagon outline -->
+      <polygon points="22,2 40,12 40,32 22,42 4,32 4,12" fill="none" stroke="#f5a623" stroke-width="1.5"/>
+      <!-- Roof lines left -->
+      <line x1="4" y1="12" x2="22" y2="2" stroke="#f5a623" stroke-width="1.5"/>
+      <line x1="22" y1="42" x2="4" y2="32" stroke="#f5a623" stroke-width="1.5"/>
+      <!-- T letter -->
+      <rect x="17" y="13" width="10" height="2.5" fill="#f5a623" rx="0.5"/>
+      <rect x="20.5" y="13" width="3" height="11" fill="#f5a623" rx="0.5"/>
+    </svg>
+    <span style="color:var(--white); font-size:1.1rem; letter-spacing:.04em;">TRI-CITIES <span style="color:var(--amber);">AUTO GLASS</span></span>
   </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
@@ -600,25 +610,38 @@
     <p class="section-sub">Every job done right — at your location, on your schedule.</p>
   </div>
   <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-top: 40px;">
+
+    <!-- Cracked windshield closeup -->
     <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
-      <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=600&q=80" alt="Windshield replacement service Tri-Cities WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+      <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&q=80" alt="Cracked windshield repair Tri-Cities WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
     </div>
+
+    <!-- Car windshield from outside -->
     <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
-      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" alt="Auto glass repair mobile service Kennewick" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+      <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&q=80" alt="Windshield replacement Kennewick WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
     </div>
+
+    <!-- Car window / glass close -->
     <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
-      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Cracked windshield repair Richland Pasco WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+      <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&q=80" alt="Auto glass service Richland WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
     </div>
+
+    <!-- Car side window -->
     <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
-      <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=80" alt="Mobile auto glass technician Tri-Cities" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+      <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600&q=80" alt="Side window glass repair Pasco WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
     </div>
+
+    <!-- Car front windshield view -->
     <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
-      <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&q=80" alt="Windshield chip repair same day service" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Mobile windshield replacement same day Tri-Cities" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
     </div>
+
+    <!-- CTA tile -->
     <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px; background: linear-gradient(135deg, var(--amber), var(--amber2)); display:flex; align-items:center; justify-content:center; flex-direction:column; gap: 12px;">
       <div style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.6rem; color: var(--navy); text-align:center; padding: 20px;">Same-Day Service Available<br/><span style="font-size:1.1rem; font-weight:600;">Call for a Free Quote</span></div>
       <a href="tel:5092340000" style="background: var(--navy); color: var(--white); font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem; letter-spacing:.06em; text-transform:uppercase; padding: 12px 24px; border-radius: 6px; text-decoration:none;">☎ Call Now</a>
     </div>
+
   </div>
 </section>
 
@@ -841,30 +864,6 @@
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
       Prosser, WA
     </div>
-    <div class="area-city reveal">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
-      Finley, WA
-    </div>
-    <div class="area-city reveal">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
-      Burbank, WA
-    </div>
-    <div class="area-city reveal">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
-      Connell, WA
-    </div>
-    <div class="area-city reveal">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
-      Othello, WA
-    </div>
-    <div class="area-city reveal">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
-      Walla Walla, WA
-    </div>
-    <div class="area-city reveal">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
-      Hermiston, OR
-    </div>
   </div>
 </section>
 
@@ -913,8 +912,15 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="#" class="nav-brand" style="font-size: 1.2rem;">
-        <img src="logo.jpg" alt="Tri-Cities Auto Glass Logo" style="height:36px; width:auto;" />
+      <a href="#" class="nav-brand" style="font-size: 1rem;">
+        <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="22,2 40,12 40,32 22,42 4,32 4,12" fill="none" stroke="#f5a623" stroke-width="1.5"/>
+          <line x1="4" y1="12" x2="22" y2="2" stroke="#f5a623" stroke-width="1.5"/>
+          <line x1="22" y1="42" x2="4" y2="32" stroke="#f5a623" stroke-width="1.5"/>
+          <rect x="17" y="13" width="10" height="2.5" fill="#f5a623" rx="0.5"/>
+          <rect x="20.5" y="13" width="3" height="11" fill="#f5a623" rx="0.5"/>
+        </svg>
+        <span style="color:var(--white);">TRI-CITIES <span style="color:var(--amber);">AUTO GLASS</span></span>
       </a>
       <p>Mobile auto glass repair and windshield replacement serving Kennewick, Richland, Pasco, and the greater Tri-Cities area of Washington state.</p>
     </div>
