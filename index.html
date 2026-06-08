@@ -20,7 +20,7 @@
     "url": "https://tricitiesautoglass.com",
     "telephone": "(509) 234-0000",
     "priceRange": "$$",
-    "image": "https://tricitiesautoglass.com/og-image.jpg",
+    "image": "https://tricitiesautoglass.com/logo.jpg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Kennewick",
@@ -157,7 +157,6 @@
       overflow-x: hidden;
     }
 
-    /* ── KEYFRAMES ── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(28px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -165,10 +164,6 @@
     @keyframes pulseBtn {
       0%, 100% { box-shadow: 0 0 0 0 rgba(245,166,35,.5); }
       50%       { box-shadow: 0 0 0 12px rgba(245,166,35,0); }
-    }
-    @keyframes shimmer {
-      0%   { background-position: -200% center; }
-      100% { background-position: 200% center; }
     }
 
     .fadeUp { animation: fadeUp .65s ease both; }
@@ -194,7 +189,7 @@
       display: flex; align-items: center; gap: 10px;
     }
     .nav-brand span { color: var(--amber); }
-    .nav-brand svg { flex-shrink: 0; }
+    .nav-brand img { height: 40px; width: auto; display: block; }
     .nav-links { display: flex; gap: 28px; list-style: none; }
     .nav-links a {
       font-size: .9rem; font-weight: 600; letter-spacing: .04em;
@@ -219,8 +214,8 @@
       display: flex; flex-direction: column; justify-content: center;
       padding: 80px 5% 60px;
       background:
-        linear-gradient(135deg, rgba(13,27,42,.97) 55%, rgba(22,36,54,.9) 100%),
-        url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80') center/cover no-repeat;
+        linear-gradient(135deg, rgba(13,27,42,.95) 50%, rgba(22,36,54,.85) 100%),
+        url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=1600&q=80') center/cover no-repeat;
       position: relative; overflow: hidden;
     }
     .hero::before {
@@ -270,10 +265,7 @@
       text-decoration: none; transition: border-color .2s, color .2s, transform .15s;
     }
     .btn-secondary:hover { border-color: var(--amber); color: var(--amber); transform: translateY(-2px); }
-    .hero-trust {
-      margin-top: 50px;
-      display: flex; gap: 32px; flex-wrap: wrap;
-    }
+    .hero-trust { margin-top: 50px; display: flex; gap: 32px; flex-wrap: wrap; }
     .trust-item {
       display: flex; align-items: center; gap: 10px;
       font-size: .88rem; font-weight: 600; color: var(--gray);
@@ -304,9 +296,7 @@
       font-weight: 800; font-size: clamp(1.9rem, 4vw, 3rem);
       color: var(--white); line-height: 1.1; margin-bottom: 16px;
     }
-    .section-sub {
-      font-size: 1.05rem; color: var(--gray); max-width: 560px; line-height: 1.7;
-    }
+    .section-sub { font-size: 1.05rem; color: var(--gray); max-width: 560px; line-height: 1.7; }
     .section-header { margin-bottom: 52px; }
 
     /* ── SERVICES ── */
@@ -319,8 +309,7 @@
     .service-card {
       background: var(--navy3);
       border: 1px solid rgba(255,255,255,.06);
-      border-radius: 10px;
-      padding: 32px 28px;
+      border-radius: 10px; padding: 32px 28px;
       transition: transform .2s, border-color .2s, box-shadow .2s;
       position: relative; overflow: hidden;
     }
@@ -354,14 +343,9 @@
 
     /* ── WHY US ── */
     .why { background: var(--navy); }
-    .why-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 60px; align-items: center;
-    }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
     .why-list { list-style: none; display: flex; flex-direction: column; gap: 24px; }
-    .why-item {
-      display: flex; gap: 18px; align-items: flex-start;
-    }
+    .why-item { display: flex; gap: 18px; align-items: flex-start; }
     .why-num {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800; font-size: 2.2rem; color: var(--amber);
@@ -374,15 +358,13 @@
     }
     .why-item p { font-size: .93rem; color: var(--gray); line-height: 1.65; }
     .why-visual {
-      background: var(--navy2);
-      border: 1px solid rgba(255,255,255,.07);
+      background: var(--navy2); border: 1px solid rgba(255,255,255,.07);
       border-radius: 12px; padding: 40px;
       display: flex; flex-direction: column; gap: 24px;
     }
     .stat-row { display: flex; gap: 20px; }
     .stat-box {
-      flex: 1; background: var(--navy3); border-radius: 8px; padding: 24px 20px;
-      text-align: center;
+      flex: 1; background: var(--navy3); border-radius: 8px; padding: 24px 20px; text-align: center;
     }
     .stat-box .num {
       font-family: 'Barlow Condensed', sans-serif;
@@ -399,8 +381,7 @@
     /* ── TESTIMONIALS ── */
     .testimonials { background: var(--navy2); }
     .testimonial-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 24px;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px;
     }
     .testimonial-card {
       background: var(--navy3); border: 1px solid rgba(255,255,255,.06);
@@ -408,8 +389,7 @@
     }
     .stars { color: var(--amber); font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
     .testimonial-card blockquote {
-      font-size: .97rem; color: var(--text); line-height: 1.7; font-style: italic;
-      margin-bottom: 20px;
+      font-size: .97rem; color: var(--text); line-height: 1.7; font-style: italic; margin-bottom: 20px;
     }
     .reviewer { display: flex; align-items: center; gap: 12px; }
     .reviewer-avatar {
@@ -452,10 +432,7 @@
       list-style: none; display: flex; justify-content: space-between; align-items: center;
     }
     summary::-webkit-details-marker { display: none; }
-    summary::after {
-      content: '+'; color: var(--amber); font-size: 1.4rem; font-weight: 400; flex-shrink: 0;
-      transition: transform .2s;
-    }
+    summary::after { content: '+'; color: var(--amber); font-size: 1.4rem; font-weight: 400; flex-shrink: 0; transition: transform .2s; }
     details[open] summary::after { transform: rotate(45deg); }
     .faq-answer { padding: 0 24px 20px; font-size: .95rem; color: var(--gray); line-height: 1.7; }
 
@@ -486,10 +463,7 @@
       border-top: 1px solid rgba(255,255,255,.06);
       padding: 48px 5% 32px;
     }
-    .footer-grid {
-      display: grid; grid-template-columns: 2fr 1fr 1fr;
-      gap: 48px; margin-bottom: 40px;
-    }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 40px; }
     .footer-brand p { font-size: .9rem; color: var(--gray); margin-top: 14px; line-height: 1.7; max-width: 280px; }
     footer h4 {
       font-family: 'Barlow Condensed', sans-serif;
@@ -502,8 +476,7 @@
     .footer-contact-item { display: flex; align-items: center; gap: 10px; font-size: .9rem; color: var(--gray); margin-bottom: 10px; }
     .footer-contact-item svg { color: var(--amber); flex-shrink: 0; }
     .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,.07);
-      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,.07); padding-top: 24px;
       display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
       font-size: .82rem; color: var(--gray);
     }
@@ -557,11 +530,7 @@
 <!-- ── NAV ── -->
 <nav>
   <a href="#" class="nav-brand">
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-      <path d="M14 2L3 8v12l11 6 11-6V8L14 2z" fill="rgba(245,166,35,.2)" stroke="#f5a623" stroke-width="1.5"/>
-      <path d="M8 13h12M14 10v6" stroke="#f5a623" stroke-width="2" stroke-linecap="round"/>
-    </svg>
-    Tri-Cities <span>&nbsp;Auto Glass</span>
+    <img src="logo.jpg" alt="Tri-Cities Auto Glass Logo" />
   </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
@@ -622,6 +591,36 @@
   <div class="strip-item">✓ Insurance Direct Billing</div>
   <div class="strip-item">✓ Lifetime Workmanship Warranty</div>
 </div>
+
+<!-- ── PHOTO GALLERY ── -->
+<section style="background: var(--navy); padding: 60px 5%;">
+  <div class="section-header reveal">
+    <div class="section-label">Our Work</div>
+    <h2 class="section-title">Professional Auto Glass Service</h2>
+    <p class="section-sub">Every job done right — at your location, on your schedule.</p>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-top: 40px;">
+    <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
+      <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=600&q=80" alt="Windshield replacement service Tri-Cities WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+    </div>
+    <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" alt="Auto glass repair mobile service Kennewick" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+    </div>
+    <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Cracked windshield repair Richland Pasco WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+    </div>
+    <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
+      <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=80" alt="Mobile auto glass technician Tri-Cities" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+    </div>
+    <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
+      <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&q=80" alt="Windshield chip repair same day service" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+    </div>
+    <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px; background: linear-gradient(135deg, var(--amber), var(--amber2)); display:flex; align-items:center; justify-content:center; flex-direction:column; gap: 12px;">
+      <div style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.6rem; color: var(--navy); text-align:center; padding: 20px;">Same-Day Service Available<br/><span style="font-size:1.1rem; font-weight:600;">Call for a Free Quote</span></div>
+      <a href="tel:5092340000" style="background: var(--navy); color: var(--white); font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem; letter-spacing:.06em; text-transform:uppercase; padding: 12px 24px; border-radius: 6px; text-decoration:none;">☎ Call Now</a>
+    </div>
+  </div>
+</section>
 
 <!-- ── SERVICES ── -->
 <section class="services" id="services">
@@ -915,8 +914,7 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="#" class="nav-brand" style="font-size: 1.2rem;">
-        <svg width="24" height="24" viewBox="0 0 28 28" fill="none"><path d="M14 2L3 8v12l11 6 11-6V8L14 2z" fill="rgba(245,166,35,.2)" stroke="#f5a623" stroke-width="1.5"/><path d="M8 13h12M14 10v6" stroke="#f5a623" stroke-width="2" stroke-linecap="round"/></svg>
-        Tri-Cities <span>&nbsp;Auto Glass</span>
+        <img src="logo.jpg" alt="Tri-Cities Auto Glass Logo" style="height:36px; width:auto;" />
       </a>
       <p>Mobile auto glass repair and windshield replacement serving Kennewick, Richland, Pasco, and the greater Tri-Cities area of Washington state.</p>
     </div>
@@ -954,12 +952,10 @@
 </footer>
 
 <script>
-  // Mobile menu
   function toggleMenu() {
     document.getElementById('mobile-menu').classList.toggle('open');
   }
 
-  // Scroll reveal
   const revealEls = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -971,7 +967,6 @@
   }, { threshold: 0.12 });
   revealEls.forEach(el => observer.observe(el));
 
-  // Smooth close mobile menu on nav link click
   document.querySelectorAll('#mobile-menu a').forEach(a => {
     a.addEventListener('click', () => {
       document.getElementById('mobile-menu').classList.remove('open');
