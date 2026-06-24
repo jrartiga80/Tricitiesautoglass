@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <!-- Local Business Schema Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -20,7 +19,7 @@
     "url": "https://tricitiesautoglass.com",
     "telephone": "(509) 234-0000",
     "priceRange": "$$",
-    "image": "https://tricitiesautoglass.com/logo.png",
+    "image": "https://tricitiesautoglass.com/hero-bg.jpg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Kennewick",
@@ -34,513 +33,311 @@
       "longitude": -119.1372
     },
     "areaServed": [
-      {
-        "@type": "City",
-        "name": "Kennewick",
-        "sameAs": "https://en.wikipedia.org/wiki/Kennewick,_Washington"
-      },
-      {
-        "@type": "City",
-        "name": "Richland",
-        "sameAs": "https://en.wikipedia.org/wiki/Richland,_Washington"
-      },
-      {
-        "@type": "City",
-        "name": "Pasco",
-        "sameAs": "https://en.wikipedia.org/wiki/Pasco,_Washington"
-      },
+      {"@type": "City", "name": "Kennewick", "sameAs": "https://en.wikipedia.org/wiki/Kennewick,_Washington"},
+      {"@type": "City", "name": "Richland", "sameAs": "https://en.wikipedia.org/wiki/Richland,_Washington"},
+      {"@type": "City", "name": "Pasco", "sameAs": "https://en.wikipedia.org/wiki/Pasco,_Washington"},
       {"@type": "City", "name": "West Richland"},
       {"@type": "City", "name": "Benton City"},
-      {"@type": "City", "name": "Prosser"},
-      {"@type": "City", "name": "Finley"},
-      {"@type": "City", "name": "Burbank"},
-      {"@type": "City", "name": "Connell"},
-      {"@type": "City", "name": "Hermiston"}
+      {"@type": "City", "name": "Prosser"}
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Auto Glass Services",
       "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Windshield Replacement",
-            "description": "Full windshield replacement using OEM-equivalent glass at your location."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Windshield Crack Repair",
-            "description": "Resin injection repair for chips and cracks to stop spreading."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Auto Glass Repair",
-            "description": "Side window, rear window, and quarter glass repair and replacement."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Sunroof Glass Repair",
-            "description": "Sunroof panel replacement and sealing for all vehicle makes and models."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Side Mirror Replacement",
-            "description": "Mirror glass and full mirror assembly replacement."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Mobile Auto Glass Service",
-            "description": "We come to your home, office, or any location in the Tri-Cities area."
-          }
-        }
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Windshield Replacement", "description": "Full windshield replacement using OEM-equivalent glass at your location."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Windshield Crack Repair", "description": "Resin injection repair for chips and cracks to stop spreading."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Auto Glass Repair", "description": "Side window, rear window, and quarter glass repair and replacement."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mobile Auto Glass Service", "description": "We come to your home, office, or any location in the Tri-Cities area."}}
       ]
     },
     "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "07:00",
-        "closes": "19:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday",
-        "opens": "08:00",
-        "closes": "17:00"
-      }
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:00", "closes": "19:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "17:00"}
     ],
-    "sameAs": [
-      "https://tricitiesautoglass.com"
-    ]
+    "sameAs": ["https://tricitiesautoglass.com"]
   }
   </script>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --navy:    #0d1b2a;
-      --navy2:   #162436;
-      --navy3:   #1e3048;
-      --amber:   #f5a623;
-      --amber2:  #e8941a;
-      --white:   #ffffff;
-      --offwhite:#f4f6f9;
-      --gray:    #8a9bb0;
-      --text:    #d0daea;
-      --radius:  6px;
+      --navy:   #0d1b2a;
+      --navy2:  #162436;
+      --navy3:  #1e3048;
+      --amber:  #f5a623;
+      --amber2: #e8941a;
+      --white:  #ffffff;
+      --gray:   #8a9bb0;
+      --text:   #d0daea;
+      --radius: 6px;
     }
-
     html { scroll-behavior: smooth; }
+    body { font-family: 'Barlow', sans-serif; background: var(--navy); color: var(--text); line-height: 1.6; overflow-x: hidden; }
 
-    body {
-      font-family: 'Barlow', sans-serif;
-      background: var(--navy);
-      color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(28px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes pulseBtn {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(245,166,35,.5); }
-      50%       { box-shadow: 0 0 0 12px rgba(245,166,35,0); }
-    }
-
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulseBtn { 0%,100% { box-shadow: 0 0 0 0 rgba(245,166,35,.5); } 50% { box-shadow: 0 0 0 12px rgba(245,166,35,0); } }
     .fadeUp { animation: fadeUp .65s ease both; }
-    .d1 { animation-delay: .1s; }
-    .d2 { animation-delay: .25s; }
-    .d3 { animation-delay: .4s; }
-    .d4 { animation-delay: .55s; }
+    .d1 { animation-delay: .1s; } .d2 { animation-delay: .25s; } .d3 { animation-delay: .4s; } .d4 { animation-delay: .55s; }
 
-    /* ── NAV ── */
+    /* NAV */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: rgba(13,27,42,.97);
-      backdrop-filter: blur(10px);
+      background: rgba(13,27,42,.97); backdrop-filter: blur(10px);
       border-bottom: 2px solid var(--amber);
-      padding: 0 5%;
-      display: flex; align-items: center; justify-content: space-between;
-      height: 64px;
+      padding: 0 5%; display: flex; align-items: center; justify-content: space-between; height: 64px;
     }
     .nav-brand {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800; font-size: 1.35rem; letter-spacing: .04em;
-      color: var(--white); text-decoration: none;
-      display: flex; align-items: center; gap: 10px;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.35rem;
+      color: var(--white); text-decoration: none; display: flex; align-items: center; gap: 10px;
     }
-    .nav-brand span { color: var(--amber); }
-    .nav-brand img { height: 40px; width: auto; display: block; }
     .nav-links { display: flex; gap: 28px; list-style: none; }
-    .nav-links a {
-      font-size: .9rem; font-weight: 600; letter-spacing: .04em;
-      color: var(--text); text-decoration: none; text-transform: uppercase;
-      transition: color .2s;
-    }
+    .nav-links a { font-size: .9rem; font-weight: 600; letter-spacing: .04em; color: var(--text); text-decoration: none; text-transform: uppercase; transition: color .2s; }
     .nav-links a:hover { color: var(--amber); }
     .nav-cta {
-      background: var(--amber); color: var(--navy);
-      font-weight: 700; font-size: .9rem; letter-spacing: .05em; text-transform: uppercase;
-      padding: 10px 22px; border-radius: var(--radius);
-      text-decoration: none; transition: background .2s, transform .15s;
-      animation: pulseBtn 2.5s ease infinite;
+      background: var(--amber); color: var(--navy); font-weight: 700; font-size: .9rem;
+      letter-spacing: .05em; text-transform: uppercase; padding: 10px 22px; border-radius: var(--radius);
+      text-decoration: none; transition: background .2s, transform .15s; animation: pulseBtn 2.5s ease infinite;
     }
     .nav-cta:hover { background: var(--amber2); transform: translateY(-1px); animation: none; }
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
     .hamburger span { width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: .3s; }
 
-    /* ── HERO ── */
+    /* HERO — shattered windshield bg */
     .hero {
-      min-height: 88vh;
-      display: flex; flex-direction: column; justify-content: center;
-      padding: 80px 5% 60px;
-      background:
-        linear-gradient(135deg, rgba(13,27,42,.95) 50%, rgba(22,36,54,.85) 100%),
-        url('hero-bg.jpg') center/cover no-repeat;
-      position: relative; overflow: hidden;
+      min-height: 92vh; display: flex; flex-direction: column; justify-content: center;
+      padding: 80px 5% 60px; position: relative; overflow: hidden;
     }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background: url('gallery-5.jpg') center/cover no-repeat;
+    }
+    .hero-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(13,27,42,.95) 45%, rgba(13,27,42,.75) 100%);
+    }
+    .hero-content { position: relative; z-index: 1; }
     .hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: repeating-linear-gradient(
-        90deg,
-        transparent, transparent 79px,
-        rgba(245,166,35,.04) 79px, rgba(245,166,35,.04) 80px
-      );
+      content: ''; position: absolute; inset: 0; z-index: 1;
+      background: repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(245,166,35,.03) 79px, rgba(245,166,35,.03) 80px);
       pointer-events: none;
     }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
       background: rgba(245,166,35,.15); border: 1px solid rgba(245,166,35,.4);
       color: var(--amber); font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
-      padding: 6px 14px; border-radius: 20px; margin-bottom: 22px;
-      width: fit-content;
+      padding: 6px 14px; border-radius: 20px; margin-bottom: 22px; width: fit-content;
     }
     .hero h1 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800; font-size: clamp(2.6rem, 6vw, 5rem);
-      line-height: 1.0; letter-spacing: .01em;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 800;
+      font-size: clamp(2.6rem, 6vw, 5rem); line-height: 1.0; letter-spacing: .01em;
       color: var(--white); margin-bottom: 22px; max-width: 700px;
     }
     .hero h1 em { color: var(--amber); font-style: normal; }
-    .hero p {
-      font-size: clamp(1rem, 2vw, 1.2rem); color: var(--text);
-      max-width: 540px; margin-bottom: 36px; line-height: 1.7;
-    }
+    .hero p { font-size: clamp(1rem, 2vw, 1.2rem); color: var(--text); max-width: 540px; margin-bottom: 36px; line-height: 1.7; }
     .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
     .btn-primary {
-      background: var(--amber); color: var(--navy);
-      font-family: 'Barlow Condensed', sans-serif;
+      background: var(--amber); color: var(--navy); font-family: 'Barlow Condensed', sans-serif;
       font-weight: 700; font-size: 1.1rem; letter-spacing: .06em; text-transform: uppercase;
-      padding: 16px 34px; border-radius: var(--radius);
-      text-decoration: none; transition: background .2s, transform .15s;
-      animation: pulseBtn 2.5s ease 1s infinite;
+      padding: 16px 34px; border-radius: var(--radius); text-decoration: none;
+      transition: background .2s, transform .15s; animation: pulseBtn 2.5s ease 1s infinite;
     }
     .btn-primary:hover { background: var(--amber2); transform: translateY(-2px); animation: none; }
     .btn-secondary {
-      background: transparent; border: 2px solid rgba(255,255,255,.3);
-      color: var(--white);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700; font-size: 1.1rem; letter-spacing: .06em; text-transform: uppercase;
-      padding: 16px 34px; border-radius: var(--radius);
+      background: transparent; border: 2px solid rgba(255,255,255,.3); color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.1rem;
+      letter-spacing: .06em; text-transform: uppercase; padding: 16px 34px; border-radius: var(--radius);
       text-decoration: none; transition: border-color .2s, color .2s, transform .15s;
     }
     .btn-secondary:hover { border-color: var(--amber); color: var(--amber); transform: translateY(-2px); }
     .hero-trust { margin-top: 50px; display: flex; gap: 32px; flex-wrap: wrap; }
-    .trust-item {
-      display: flex; align-items: center; gap: 10px;
-      font-size: .88rem; font-weight: 600; color: var(--gray);
-    }
+    .trust-item { display: flex; align-items: center; gap: 10px; font-size: .88rem; font-weight: 600; color: var(--gray); }
     .trust-item svg { color: var(--amber); flex-shrink: 0; }
 
-    /* ── STRIP ── */
-    .strip {
-      background: var(--amber);
-      padding: 16px 5%;
-      display: flex; gap: 40px; justify-content: center; flex-wrap: wrap;
-    }
-    .strip-item {
-      display: flex; align-items: center; gap: 10px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700; font-size: 1rem; letter-spacing: .05em; text-transform: uppercase;
-      color: var(--navy);
-    }
+    /* STRIP */
+    .strip { background: var(--amber); padding: 16px 5%; display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; }
+    .strip-item { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: .05em; text-transform: uppercase; color: var(--navy); }
 
-    /* ── SECTION SCAFFOLDING ── */
+    /* SECTION SCAFFOLDING */
     section { padding: 80px 5%; }
-    .section-label {
-      font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
-      color: var(--amber); margin-bottom: 12px;
-    }
-    .section-title {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800; font-size: clamp(1.9rem, 4vw, 3rem);
-      color: var(--white); line-height: 1.1; margin-bottom: 16px;
-    }
+    .section-label { font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); margin-bottom: 12px; }
+    .section-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(1.9rem, 4vw, 3rem); color: var(--white); line-height: 1.1; margin-bottom: 16px; }
     .section-sub { font-size: 1.05rem; color: var(--gray); max-width: 560px; line-height: 1.7; }
     .section-header { margin-bottom: 52px; }
 
-    /* ── SERVICES ── */
+    /* SERVICES — photo accent on featured card */
     .services { background: var(--navy2); }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 24px;
-    }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
     .service-card {
-      background: var(--navy3);
-      border: 1px solid rgba(255,255,255,.06);
-      border-radius: 10px; padding: 32px 28px;
-      transition: transform .2s, border-color .2s, box-shadow .2s;
+      background: var(--navy3); border: 1px solid rgba(255,255,255,.06); border-radius: 10px;
+      padding: 32px 28px; transition: transform .2s, border-color .2s, box-shadow .2s;
       position: relative; overflow: hidden;
     }
     .service-card::before {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0; height: 3px;
-      background: var(--amber);
-      transform: scaleX(0); transform-origin: left;
-      transition: transform .3s ease;
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: var(--amber); transform: scaleX(0); transform-origin: left; transition: transform .3s ease;
     }
     .service-card:hover { transform: translateY(-4px); border-color: rgba(245,166,35,.3); box-shadow: 0 12px 40px rgba(0,0,0,.4); }
     .service-card:hover::before { transform: scaleX(1); }
-    .service-icon {
-      width: 52px; height: 52px; border-radius: 10px;
-      background: rgba(245,166,35,.12);
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 20px; color: var(--amber);
+
+    /* Featured service card with photo */
+    .service-card-photo {
+      position: relative; border-radius: 10px; overflow: hidden; min-height: 280px;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      border: 1px solid rgba(245,166,35,.3);
     }
-    .service-card h3 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700; font-size: 1.3rem; letter-spacing: .02em;
-      color: var(--white); margin-bottom: 10px;
+    .service-card-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .service-card-photo::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(13,27,42,.97) 40%, rgba(13,27,42,.3) 100%);
     }
+    .service-card-photo-content { position: relative; z-index: 1; padding: 28px; }
+    .service-card-photo-content h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.3rem; color: var(--white); margin-bottom: 8px; }
+    .service-card-photo-content p { font-size: .93rem; color: var(--gray); line-height: 1.6; }
+
+    .service-icon { width: 52px; height: 52px; border-radius: 10px; background: rgba(245,166,35,.12); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: var(--amber); }
+    .service-card h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.3rem; color: var(--white); margin-bottom: 10px; }
     .service-card p { font-size: .93rem; color: var(--gray); line-height: 1.65; }
-    .service-link {
-      display: inline-flex; align-items: center; gap: 6px;
-      margin-top: 18px; font-size: .88rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
-      color: var(--amber); text-decoration: none; transition: gap .2s;
-    }
+    .service-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; font-size: .88rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--amber); text-decoration: none; transition: gap .2s; }
     .service-link:hover { gap: 10px; }
 
-    /* ── WHY US ── */
+    /* WHY US — split layout with photo */
     .why { background: var(--navy); }
     .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
     .why-list { list-style: none; display: flex; flex-direction: column; gap: 24px; }
     .why-item { display: flex; gap: 18px; align-items: flex-start; }
-    .why-num {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800; font-size: 2.2rem; color: var(--amber);
-      line-height: 1; flex-shrink: 0; width: 44px;
-    }
-    .why-item h4 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700; font-size: 1.2rem; letter-spacing: .02em;
-      color: var(--white); margin-bottom: 6px;
-    }
+    .why-num { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 2.2rem; color: var(--amber); line-height: 1; flex-shrink: 0; width: 44px; }
+    .why-item h4 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.2rem; color: var(--white); margin-bottom: 6px; }
     .why-item p { font-size: .93rem; color: var(--gray); line-height: 1.65; }
-    .why-visual {
-      background: var(--navy2); border: 1px solid rgba(255,255,255,.07);
-      border-radius: 12px; padding: 40px;
-      display: flex; flex-direction: column; gap: 24px;
-    }
-    .stat-row { display: flex; gap: 20px; }
-    .stat-box {
-      flex: 1; background: var(--navy3); border-radius: 8px; padding: 24px 20px; text-align: center;
-    }
-    .stat-box .num {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800; font-size: 2.4rem; color: var(--amber); line-height: 1;
-    }
-    .stat-box .label { font-size: .82rem; color: var(--gray); margin-top: 6px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
-    .area-tag-group { display: flex; flex-wrap: wrap; gap: 10px; }
-    .area-tag {
-      background: rgba(245,166,35,.1); border: 1px solid rgba(245,166,35,.25);
-      color: var(--amber); font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
-      padding: 6px 14px; border-radius: 20px;
-    }
 
-    /* ── TESTIMONIALS ── */
-    .testimonials { background: var(--navy2); }
-    .testimonial-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px;
+    /* Why Us photo panel */
+    .why-photo-panel { position: relative; border-radius: 12px; overflow: hidden; height: 520px; }
+    .why-photo-panel img { width: 100%; height: 100%; object-fit: cover; }
+    .why-photo-panel::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(13,27,42,.8) 0%, transparent 60%);
     }
-    .testimonial-card {
-      background: var(--navy3); border: 1px solid rgba(255,255,255,.06);
-      border-radius: 10px; padding: 28px;
+    .why-photo-badge {
+      position: absolute; bottom: 28px; left: 28px; right: 28px; z-index: 1;
+      background: rgba(13,27,42,.85); backdrop-filter: blur(8px);
+      border: 1px solid rgba(245,166,35,.3); border-radius: 10px; padding: 20px 24px;
+      display: flex; gap: 24px;
     }
+    .why-stat { text-align: center; flex: 1; }
+    .why-stat .num { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 2rem; color: var(--amber); line-height: 1; }
+    .why-stat .lbl { font-size: .75rem; color: var(--gray); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; margin-top: 4px; }
+
+    /* SPLIT PROMO — technician photo with text */
+    .split-promo { background: var(--navy2); padding: 0; overflow: hidden; }
+    .split-promo-inner { display: grid; grid-template-columns: 1fr 1fr; min-height: 440px; }
+    .split-photo { position: relative; overflow: hidden; }
+    .split-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .split-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, transparent 60%, var(--navy2) 100%); }
+    .split-content { display: flex; flex-direction: column; justify-content: center; padding: 60px 5% 60px 40px; }
+    .split-content .section-label { margin-bottom: 12px; }
+    .split-content h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(1.9rem, 3vw, 2.8rem); color: var(--white); line-height: 1.1; margin-bottom: 20px; }
+    .split-content p { font-size: 1rem; color: var(--gray); line-height: 1.7; margin-bottom: 14px; }
+    .split-content a { margin-top: 10px; }
+
+    /* TESTIMONIALS */
+    .testimonials { background: var(--navy); }
+    .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+    .testimonial-card { background: var(--navy2); border: 1px solid rgba(255,255,255,.06); border-radius: 10px; padding: 28px; }
     .stars { color: var(--amber); font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
-    .testimonial-card blockquote {
-      font-size: .97rem; color: var(--text); line-height: 1.7; font-style: italic; margin-bottom: 20px;
-    }
+    .testimonial-card blockquote { font-size: .97rem; color: var(--text); line-height: 1.7; font-style: italic; margin-bottom: 20px; }
     .reviewer { display: flex; align-items: center; gap: 12px; }
-    .reviewer-avatar {
-      width: 40px; height: 40px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--amber), var(--amber2));
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1rem; color: var(--navy);
-    }
+    .reviewer-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--amber), var(--amber2)); display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1rem; color: var(--navy); }
     .reviewer-name { font-weight: 700; font-size: .9rem; color: var(--white); }
     .reviewer-loc { font-size: .8rem; color: var(--gray); }
 
-    /* ── SERVICE AREA ── */
-    .service-area { background: var(--navy); }
-    .area-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 14px; margin-top: 40px;
-    }
-    .area-city {
-      background: var(--navy2); border: 1px solid rgba(255,255,255,.06);
-      border-radius: 8px; padding: 16px 20px;
-      display: flex; align-items: center; gap: 10px;
-      font-size: .9rem; font-weight: 600; color: var(--text);
-      transition: border-color .2s, color .2s;
-    }
+    /* SERVICE AREA */
+    .service-area { background: var(--navy2); }
+    .area-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; margin-top: 40px; }
+    .area-city { background: var(--navy3); border: 1px solid rgba(255,255,255,.06); border-radius: 8px; padding: 16px 20px; display: flex; align-items: center; gap: 10px; font-size: .9rem; font-weight: 600; color: var(--text); transition: border-color .2s, color .2s; }
     .area-city svg { color: var(--amber); flex-shrink: 0; }
     .area-city:hover { border-color: rgba(245,166,35,.4); color: var(--white); }
 
-    /* ── FAQ ── */
-    .faq { background: var(--navy2); }
+    /* FAQ */
+    .faq { background: var(--navy); }
     .faq-list { max-width: 740px; display: flex; flex-direction: column; gap: 12px; }
-    details {
-      background: var(--navy3); border: 1px solid rgba(255,255,255,.07);
-      border-radius: 8px; overflow: hidden;
-    }
+    details { background: var(--navy2); border: 1px solid rgba(255,255,255,.07); border-radius: 8px; overflow: hidden; }
     details[open] { border-color: rgba(245,166,35,.3); }
-    summary {
-      padding: 20px 24px; cursor: pointer;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700; font-size: 1.1rem; letter-spacing: .02em; color: var(--white);
-      list-style: none; display: flex; justify-content: space-between; align-items: center;
-    }
+    summary { padding: 20px 24px; cursor: pointer; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--white); list-style: none; display: flex; justify-content: space-between; align-items: center; }
     summary::-webkit-details-marker { display: none; }
     summary::after { content: '+'; color: var(--amber); font-size: 1.4rem; font-weight: 400; flex-shrink: 0; transition: transform .2s; }
     details[open] summary::after { transform: rotate(45deg); }
     .faq-answer { padding: 0 24px 20px; font-size: .95rem; color: var(--gray); line-height: 1.7; }
 
-    /* ── CTA BAND ── */
-    .cta-band {
-      background: linear-gradient(135deg, var(--amber) 0%, var(--amber2) 100%);
-      padding: 64px 5%; text-align: center;
-    }
-    .cta-band h2 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800; font-size: clamp(2rem, 4.5vw, 3.2rem);
-      color: var(--navy); line-height: 1.1; margin-bottom: 16px;
-    }
-    .cta-band p { font-size: 1.1rem; color: rgba(13,27,42,.75); max-width: 520px; margin: 0 auto 32px; }
-    .btn-dark {
-      background: var(--navy); color: var(--white);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700; font-size: 1.1rem; letter-spacing: .06em; text-transform: uppercase;
-      padding: 16px 36px; border-radius: var(--radius);
-      text-decoration: none; display: inline-block;
-      transition: background .2s, transform .15s;
-    }
+    /* CTA BAND — with photo background */
+    .cta-band { position: relative; padding: 80px 5%; text-align: center; overflow: hidden; }
+    .cta-band-bg { position: absolute; inset: 0; }
+    .cta-band-bg img { width: 100%; height: 100%; object-fit: cover; }
+    .cta-band-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(245,166,35,.92) 0%, rgba(232,148,26,.92) 100%); }
+    .cta-band-content { position: relative; z-index: 1; }
+    .cta-band h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(2rem, 4.5vw, 3.2rem); color: var(--navy); line-height: 1.1; margin-bottom: 16px; }
+    .cta-band p { font-size: 1.1rem; color: rgba(13,27,42,.8); max-width: 520px; margin: 0 auto 32px; }
+    .btn-dark { background: var(--navy); color: var(--white); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.1rem; letter-spacing: .06em; text-transform: uppercase; padding: 16px 36px; border-radius: var(--radius); text-decoration: none; display: inline-block; transition: background .2s, transform .15s; }
     .btn-dark:hover { background: var(--navy2); transform: translateY(-2px); }
 
-    /* ── FOOTER ── */
-    footer {
-      background: rgba(0,0,0,.5);
-      border-top: 1px solid rgba(255,255,255,.06);
-      padding: 48px 5% 32px;
-    }
+    /* FOOTER */
+    footer { background: rgba(0,0,0,.5); border-top: 1px solid rgba(255,255,255,.06); padding: 48px 5% 32px; }
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 40px; }
     .footer-brand p { font-size: .9rem; color: var(--gray); margin-top: 14px; line-height: 1.7; max-width: 280px; }
-    footer h4 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase;
-      color: var(--white); margin-bottom: 16px;
-    }
+    footer h4 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--white); margin-bottom: 16px; }
     .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
     .footer-links a { font-size: .9rem; color: var(--gray); text-decoration: none; transition: color .2s; }
     .footer-links a:hover { color: var(--amber); }
     .footer-contact-item { display: flex; align-items: center; gap: 10px; font-size: .9rem; color: var(--gray); margin-bottom: 10px; }
     .footer-contact-item svg { color: var(--amber); flex-shrink: 0; }
-    .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,.07); padding-top: 24px;
-      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
-      font-size: .82rem; color: var(--gray);
-    }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.07); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: .82rem; color: var(--gray); }
     .footer-bottom a { color: var(--gray); text-decoration: none; }
     .footer-bottom a:hover { color: var(--amber); }
 
-    /* ── SCROLL REVEAL ── */
+    /* REVEAL */
     .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
     .reveal.visible { opacity: 1; transform: none; }
 
-    /* ── MOBILE NAV MENU ── */
-    #mobile-menu {
-      display: none; flex-direction: column; gap: 0;
-      position: fixed; top: 64px; left: 0; right: 0;
-      background: var(--navy2); border-top: 2px solid var(--amber);
-      z-index: 99; padding: 20px 5%;
-    }
+    /* MOBILE MENU */
+    #mobile-menu { display: none; flex-direction: column; gap: 0; position: fixed; top: 64px; left: 0; right: 0; background: var(--navy2); border-top: 2px solid var(--amber); z-index: 99; padding: 20px 5%; }
     #mobile-menu.open { display: flex; }
-    #mobile-menu a {
-      padding: 14px 0; font-weight: 700; font-size: 1rem; letter-spacing: .04em; text-transform: uppercase;
-      color: var(--text); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.07);
-      transition: color .2s;
-    }
+    #mobile-menu a { padding: 14px 0; font-weight: 700; font-size: 1rem; letter-spacing: .04em; text-transform: uppercase; color: var(--text); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.07); transition: color .2s; }
     #mobile-menu a:hover { color: var(--amber); }
-    #mobile-menu .mob-cta {
-      margin-top: 16px; background: var(--amber); color: var(--navy);
-      text-align: center; padding: 14px; border-radius: var(--radius); font-size: 1.05rem;
-    }
+    #mobile-menu .mob-cta { margin-top: 16px; background: var(--amber); color: var(--navy); text-align: center; padding: 14px; border-radius: var(--radius); font-size: 1.05rem; }
 
-    /* ── RESPONSIVE ── */
+    /* RESPONSIVE */
     @media (max-width: 900px) {
       .nav-links { display: none; }
       .hamburger { display: flex; }
       .why-grid { grid-template-columns: 1fr; }
+      .why-photo-panel { height: 320px; }
+      .split-promo-inner { grid-template-columns: 1fr; }
+      .split-photo { height: 280px; }
+      .split-photo::after { background: linear-gradient(to bottom, transparent 60%, var(--navy2) 100%); }
+      .split-content { padding: 40px 5%; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 600px) {
       nav { padding: 0 4%; }
       section { padding: 60px 4%; }
-      .hero { padding: 60px 4% 50px; }
+      .hero-content { padding: 0; }
       .hero-btns { flex-direction: column; }
       .btn-primary, .btn-secondary { text-align: center; }
-      .stat-row { flex-direction: column; }
       .footer-grid { grid-template-columns: 1fr; }
       .strip { flex-direction: column; gap: 16px; align-items: center; }
+      .why-photo-badge { flex-wrap: wrap; gap: 16px; }
     }
   </style>
 </head>
 <body>
 
-<!-- ── NAV ── -->
+<!-- NAV -->
 <nav>
   <a href="#" class="nav-brand">
-    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Hexagon outline -->
+    <svg width="34" height="34" viewBox="0 0 44 44" fill="none">
       <polygon points="22,2 40,12 40,32 22,42 4,32 4,12" fill="none" stroke="#f5a623" stroke-width="1.5"/>
-      <!-- Roof lines left -->
-      <line x1="4" y1="12" x2="22" y2="2" stroke="#f5a623" stroke-width="1.5"/>
-      <line x1="22" y1="42" x2="4" y2="32" stroke="#f5a623" stroke-width="1.5"/>
-      <!-- T letter -->
       <rect x="17" y="13" width="10" height="2.5" fill="#f5a623" rx="0.5"/>
       <rect x="20.5" y="13" width="3" height="11" fill="#f5a623" rx="0.5"/>
     </svg>
-    <span style="color:var(--white); font-size:1.1rem; letter-spacing:.04em;">TRI-CITIES <span style="color:var(--amber);">AUTO GLASS</span></span>
+    <span style="color:var(--white);">TRI-CITIES <span style="color:var(--amber);">AUTO GLASS</span></span>
   </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
@@ -562,39 +359,42 @@
   <a href="tel:5092340000" class="mob-cta">☎ Call Now — Free Quote</a>
 </div>
 
-<!-- ── HERO ── -->
+<!-- HERO — shattered windshield background -->
 <section class="hero">
-  <div class="hero-badge fadeUp d1">
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><circle cx="7" cy="7" r="3"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-    Serving Kennewick · Richland · Pasco
-  </div>
-  <h1 class="fadeUp d1">Cracked Windshield?<br/><em>We Come to You.</em></h1>
-  <p class="fadeUp d2">Fast, affordable auto glass repair and windshield replacement across the Tri-Cities. Most repairs done in under an hour — at your home, office, or wherever you're parked.</p>
-  <div class="hero-btns fadeUp d3">
-    <a href="tel:5092340000" class="btn-primary">☎ Call for a Free Quote</a>
-    <a href="#services" class="btn-secondary">See All Services</a>
-  </div>
-  <div class="hero-trust fadeUp d4">
-    <div class="trust-item">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l2.5 5 5.5.8-4 3.9.9 5.5L9 13.5l-4.9 2.7.9-5.5L1 6.8l5.5-.8L9 1z" fill="currentColor"/></svg>
-      Locally Trusted
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge fadeUp d1">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><circle cx="7" cy="7" r="3"/><path d="M7 1v2M7 11v2M1 7h2M11 7h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      Serving Kennewick · Richland · Pasco
     </div>
-    <div class="trust-item">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M5 9l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Insurance Accepted
+    <h1 class="fadeUp d1">Cracked Windshield?<br/><em>We Come to You.</em></h1>
+    <p class="fadeUp d2">Fast, affordable auto glass repair and windshield replacement across the Tri-Cities. Most repairs done in under an hour — at your home, office, or wherever you're parked.</p>
+    <div class="hero-btns fadeUp d3">
+      <a href="tel:5092340000" class="btn-primary">☎ Call for a Free Quote</a>
+      <a href="#services" class="btn-secondary">See All Services</a>
     </div>
-    <div class="trust-item">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M9 4v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      Same-Day Available
-    </div>
-    <div class="trust-item">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1C4.6 1 1 4.6 1 9s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 4v4l3 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-      Mobile Service — We Come To You
+    <div class="hero-trust fadeUp d4">
+      <div class="trust-item">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l2.5 5 5.5.8-4 3.9.9 5.5L9 13.5l-4.9 2.7.9-5.5L1 6.8l5.5-.8L9 1z" fill="currentColor"/></svg>
+        Locally Trusted
+      </div>
+      <div class="trust-item">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M5 9l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Insurance Accepted
+      </div>
+      <div class="trust-item">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M9 4v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Same-Day Available
+      </div>
+      <div class="trust-item">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1C4.6 1 1 4.6 1 9s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 4v4l3 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Mobile Service
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ── STRIP ── -->
+<!-- STRIP -->
 <div class="strip">
   <div class="strip-item">✓ Free Quotes</div>
   <div class="strip-item">✓ OEM-Quality Glass</div>
@@ -602,65 +402,23 @@
   <div class="strip-item">✓ Lifetime Workmanship Warranty</div>
 </div>
 
-<!-- ── PHOTO GALLERY ── -->
-<section style="background: var(--navy); padding: 60px 5%;">
-  <div class="section-header reveal">
-    <div class="section-label">Our Work</div>
-    <h2 class="section-title">Professional Auto Glass Service</h2>
-    <p class="section-sub">Every job done right — at your location, on your schedule.</p>
-  </div>
-  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-top: 40px;">
-
-    <!-- 1: Glue gun on windshield frame -->
-    <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
-      <img src="gallery-1.jpg" alt="Windshield installation service Tri-Cities WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
-    </div>
-
-    <!-- 2: Resin injection tool on windshield -->
-    <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
-      <img src="gallery-2.jpg" alt="Windshield chip resin repair Kennewick WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
-    </div>
-
-    <!-- 3: Smiling technician with windshield -->
-    <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
-      <img src="gallery-3.jpg" alt="Auto glass technician Richland WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
-    </div>
-
-    <!-- 4: Technician installing windshield -->
-    <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
-      <img src="gallery-4.jpg" alt="Windshield replacement Pasco WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
-    </div>
-
-    <!-- 5: Shattered windshield -->
-    <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px;">
-      <img src="gallery-5.jpg" alt="Cracked windshield repair Tri-Cities WA" style="width:100%; height:100%; object-fit:cover; transition: transform .3s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
-    </div>
-
-    <!-- CTA tile -->
-    <div class="reveal" style="border-radius: 10px; overflow: hidden; height: 220px; background: linear-gradient(135deg, var(--amber), var(--amber2)); display:flex; align-items:center; justify-content:center; flex-direction:column; gap: 12px;">
-      <div style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.6rem; color: var(--navy); text-align:center; padding: 20px;">Same-Day Service Available<br/><span style="font-size:1.1rem; font-weight:600;">Call for a Free Quote</span></div>
-      <a href="tel:5092340000" style="background: var(--navy); color: var(--white); font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem; letter-spacing:.06em; text-transform:uppercase; padding: 12px 24px; border-radius: 6px; text-decoration:none;">☎ Call Now</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ── SERVICES ── -->
+<!-- SERVICES — hero-bg.jpg used on mobile card -->
 <section class="services" id="services">
   <div class="section-header reveal">
     <div class="section-label">What We Do</div>
     <h2 class="section-title">Auto Glass Services in the Tri-Cities</h2>
-    <p class="section-sub">From a small chip to a full windshield replacement, our technicians handle it all — at your location, on your schedule.</p>
+    <p class="section-sub">From a small chip to a full windshield replacement, we handle it all — at your location, on your schedule.</p>
   </div>
   <div class="services-grid">
 
-    <div class="service-card reveal">
-      <div class="service-icon">
-        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="2" y="6" width="22" height="14" rx="3" stroke="currentColor" stroke-width="2"/><path d="M6 10h14M8 14h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <!-- Photo card — technician installing windshield -->
+    <div class="service-card-photo reveal">
+      <img src="hero-bg.jpg" alt="Windshield replacement service Tri-Cities WA" />
+      <div class="service-card-photo-content">
+        <h3>Windshield Replacement</h3>
+        <p>Full swap using OEM-match glass. Done in 60–90 minutes at your location.</p>
+        <a href="#contact" class="service-link">Get a Quote →</a>
       </div>
-      <h3>Windshield Replacement</h3>
-      <p>Full windshield swap using OEM-match glass. We handle removal, installation, and seal — typically in 60–90 minutes at your location.</p>
-      <a href="#contact" class="service-link">Get a Quote →</a>
     </div>
 
     <div class="service-card reveal">
@@ -677,7 +435,7 @@
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="3" y="8" width="20" height="10" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 12h20" stroke="currentColor" stroke-width="1.5"/></svg>
       </div>
       <h3>Auto Glass Repair</h3>
-      <p>Side windows, rear windows, and quarter glass — if it's broken or cracked, we can fix or replace it. All makes and models.</p>
+      <p>Side windows, rear windows, and quarter glass — if it's broken or cracked, we fix or replace it. All makes and models.</p>
       <a href="#contact" class="service-link">Get a Quote →</a>
     </div>
 
@@ -686,7 +444,7 @@
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M4 13a9 9 0 1 0 18 0 9 9 0 0 0-18 0z" stroke="currentColor" stroke-width="2"/><path d="M13 4v4M13 18v4M4 13h4M18 13h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
       <h3>Sunroof Glass Repair</h3>
-      <p>Cracked or shattered sunroof? We source replacement panels and seal them tight so leaks and drafts stay outside where they belong.</p>
+      <p>Cracked or shattered sunroof? We source replacement panels and seal them tight so leaks stay outside where they belong.</p>
       <a href="#contact" class="service-link">Get a Quote →</a>
     </div>
 
@@ -695,23 +453,24 @@
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M5 8l3-5h10l3 5v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8z" stroke="currentColor" stroke-width="2"/><circle cx="13" cy="14" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
       </div>
       <h3>Side Mirror Replacement</h3>
-      <p>Clipped in a parking lot or hit on the highway — we replace mirror glass and full mirror assemblies for a clean factory fit.</p>
+      <p>Clipped in a parking lot or hit on the highway — we replace mirror glass and full assemblies for a clean factory fit.</p>
       <a href="#contact" class="service-link">Get a Quote →</a>
     </div>
 
-    <div class="service-card reveal" style="border-color: rgba(245,166,35,.3); background: rgba(245,166,35,.05);">
-      <div class="service-icon" style="background: rgba(245,166,35,.2);">
-        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M4 18V10l9-7 9 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="9" y="14" width="8" height="9" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+    <!-- Photo card — mobile service -->
+    <div class="service-card-photo reveal">
+      <img src="gallery-4.jpg" alt="Mobile auto glass technician Tri-Cities WA" />
+      <div class="service-card-photo-content">
+        <h3>Mobile Service — We Come To You</h3>
+        <p>Home, office, parking lot — we bring the tools to you. No tow, no trip, no hassle.</p>
+        <a href="tel:5092340000" class="service-link">Call to Book →</a>
       </div>
-      <h3>Mobile Service — We Come To You</h3>
-      <p>Home, office, parking lot — wherever you are in the Tri-Cities, we bring the tools to you. No tow, no trip, no hassle.</p>
-      <a href="tel:5092340000" class="service-link" style="color: var(--amber);">Call to Book →</a>
     </div>
 
   </div>
 </section>
 
-<!-- ── WHY US ── -->
+<!-- WHY US — gallery-1.jpg (glue gun) as side photo -->
 <section class="why" id="why">
   <div class="why-grid">
     <div>
@@ -743,96 +502,84 @@
           <div class="why-num">04</div>
           <div>
             <h4>Lifetime Workmanship Warranty</h4>
-            <p>Every installation comes backed by our warranty. If the seal fails or something doesn't look right, we fix it. Period.</p>
+            <p>Every installation is backed by our warranty. If the seal fails or something doesn't look right, we fix it. Period.</p>
           </div>
         </li>
       </ul>
     </div>
 
-    <div class="why-visual reveal">
-      <div class="stat-row">
-        <div class="stat-box">
-          <div class="num">60<span style="font-size:1.4rem">min</span></div>
-          <div class="label">Avg. Service Time</div>
+    <!-- gallery-1.jpg — glue gun sealing windshield frame -->
+    <div class="why-photo-panel reveal">
+      <img src="gallery-1.jpg" alt="Auto glass technician sealing windshield Tri-Cities WA" />
+      <div class="why-photo-badge">
+        <div class="why-stat">
+          <div class="num">60<span style="font-size:1.1rem">min</span></div>
+          <div class="lbl">Avg Service Time</div>
         </div>
-        <div class="stat-box">
+        <div class="why-stat">
           <div class="num">$0</div>
-          <div class="label">Cost for Insurance Claims</div>
+          <div class="lbl">Insurance Claims</div>
         </div>
-      </div>
-      <div class="stat-row">
-        <div class="stat-box">
+        <div class="why-stat">
           <div class="num">★ 5.0</div>
-          <div class="label">Average Rating</div>
-        </div>
-        <div class="stat-box">
-          <div class="num">3</div>
-          <div class="label">Cities Covered</div>
-        </div>
-      </div>
-      <div>
-        <div class="section-label" style="margin-bottom: 10px;">Service Zones</div>
-        <div class="area-tag-group">
-          <span class="area-tag">Kennewick</span>
-          <span class="area-tag">Richland</span>
-          <span class="area-tag">Pasco</span>
-          <span class="area-tag">West Richland</span>
-          <span class="area-tag">Benton City</span>
-          <span class="area-tag">Prosser</span>
+          <div class="lbl">Avg Rating</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── TESTIMONIALS ── -->
+<!-- SPLIT PROMO — gallery-2.jpg (resin injection tool) -->
+<div class="split-promo">
+  <div class="split-promo-inner">
+    <div class="split-photo reveal">
+      <img src="gallery-2.jpg" alt="Windshield chip resin repair Kennewick Richland Pasco WA" />
+    </div>
+    <div class="split-content reveal">
+      <div class="section-label">Chip Repair Specialists</div>
+      <h2>Don't Wait Until a Chip Becomes a Crack</h2>
+      <p>A small chip can spread across your entire windshield overnight — especially in Washington's heat and cold swings. We inject professional-grade resin that bonds to the glass and stops the damage in its tracks.</p>
+      <p>Most chip repairs take under 30 minutes. Many insurance policies cover it at zero cost to you.</p>
+      <a href="tel:5092340000" class="btn-primary" style="width: fit-content;">☎ Call Now — It's Free to Ask</a>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
 <section class="testimonials">
   <div class="section-header reveal">
     <div class="section-label">What Customers Say</div>
     <h2 class="section-title">Tri-Cities Drivers Trust Us</h2>
   </div>
   <div class="testimonial-grid">
-
     <div class="testimonial-card reveal">
       <div class="stars">★★★★★</div>
       <blockquote>"I had a big rock chip on the highway and called in the morning. They came to my office in Kennewick the same afternoon. Total time start to finish was maybe 45 minutes. Fantastic service."</blockquote>
       <div class="reviewer">
         <div class="reviewer-avatar">DM</div>
-        <div>
-          <div class="reviewer-name">David M.</div>
-          <div class="reviewer-loc">Kennewick, WA</div>
-        </div>
+        <div><div class="reviewer-name">David M.</div><div class="reviewer-loc">Kennewick, WA</div></div>
       </div>
     </div>
-
     <div class="testimonial-card reveal">
       <div class="stars">★★★★★</div>
       <blockquote>"My insurance covered the whole windshield replacement and these guys handled everything with the insurer directly. I didn't have to make a single call. Showed up on time, clean work, zero hassle."</blockquote>
       <div class="reviewer">
         <div class="reviewer-avatar">SR</div>
-        <div>
-          <div class="reviewer-name">Sarah R.</div>
-          <div class="reviewer-loc">Richland, WA</div>
-        </div>
+        <div><div class="reviewer-name">Sarah R.</div><div class="reviewer-loc">Richland, WA</div></div>
       </div>
     </div>
-
     <div class="testimonial-card reveal">
       <div class="stars">★★★★★</div>
       <blockquote>"Cracked rear window on a Friday evening. They had a technician out to my house in Pasco the next morning. Price was fair, install was flawless. I've already referred two neighbors."</blockquote>
       <div class="reviewer">
         <div class="reviewer-avatar">JL</div>
-        <div>
-          <div class="reviewer-name">Jose L.</div>
-          <div class="reviewer-loc">Pasco, WA</div>
-        </div>
+        <div><div class="reviewer-name">Jose L.</div><div class="reviewer-loc">Pasco, WA</div></div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- ── SERVICE AREA ── -->
+<!-- SERVICE AREA -->
 <section class="service-area" id="areas">
   <div class="section-header reveal">
     <div class="section-label">Where We Work</div>
@@ -840,34 +587,16 @@
     <p class="section-sub">We dispatch throughout the greater Tri-Cities area. If you're unsure whether we cover your location, just call — we'll tell you straight.</p>
   </div>
   <div class="area-grid">
-    <div class="area-city reveal">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
-      Kennewick, WA
-    </div>
-    <div class="area-city reveal">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
-      Richland, WA
-    </div>
-    <div class="area-city reveal">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
-      Pasco, WA
-    </div>
-    <div class="area-city reveal">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
-      West Richland, WA
-    </div>
-    <div class="area-city reveal">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
-      Benton City, WA
-    </div>
-    <div class="area-city reveal">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
-      Prosser, WA
-    </div>
+    <div class="area-city reveal"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>Kennewick, WA</div>
+    <div class="area-city reveal"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>Richland, WA</div>
+    <div class="area-city reveal"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>Pasco, WA</div>
+    <div class="area-city reveal"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>West Richland, WA</div>
+    <div class="area-city reveal"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>Benton City, WA</div>
+    <div class="area-city reveal"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>Prosser, WA</div>
   </div>
 </section>
 
-<!-- ── FAQ ── -->
+<!-- FAQ -->
 <section class="faq" id="faq">
   <div class="section-header reveal">
     <div class="section-label">Common Questions</div>
@@ -880,7 +609,7 @@
     </details>
     <details>
       <summary>Can a cracked windshield actually be repaired, or does it need to be replaced?</summary>
-      <div class="faq-answer">Chips smaller than a quarter and cracks shorter than about 6 inches can usually be repaired with resin injection. Cracks larger than that, or anything in the driver's direct line of sight, typically require a full replacement. We'll give you an honest assessment when we look at it — no pressure to upgrade if a repair is the right call.</div>
+      <div class="faq-answer">Chips smaller than a quarter and cracks shorter than about 6 inches can usually be repaired with resin injection. Cracks larger than that, or anything in the driver's direct line of sight, typically require a full replacement. We'll give you an honest assessment — no pressure to upgrade if a repair is the right call.</div>
     </details>
     <details>
       <summary>How long does a windshield replacement take?</summary>
@@ -892,7 +621,7 @@
     </details>
     <details>
       <summary>What areas do you serve?</summary>
-      <div class="faq-answer">We primarily serve Kennewick, Richland, and Pasco, plus surrounding communities including West Richland, Benton City, Prosser, Finley, Burbank, Connell, and Hermiston, OR. If you're not sure whether we cover your location, just call and we'll tell you right away.</div>
+      <div class="faq-answer">We primarily serve Kennewick, Richland, and Pasco, plus surrounding communities including West Richland, Benton City, and Prosser. If you're not sure whether we cover your location, just call and we'll tell you right away.</div>
     </details>
     <details>
       <summary>Is the glass you use as good as the original?</summary>
@@ -901,26 +630,29 @@
   </div>
 </section>
 
-<!-- ── CTA BAND ── -->
+<!-- CTA BAND — gallery-3.jpg (smiling tech) as background -->
 <section class="cta-band" id="contact">
-  <h2 class="reveal">Ready to Get Your Glass Fixed?</h2>
-  <p class="reveal">Call for a free quote. We'll tell you exactly what it costs and how fast we can get to you. No pressure, no surprises.</p>
-  <a href="tel:5092340000" class="btn-dark reveal">☎ Call Now — (509) 234-0000</a>
+  <div class="cta-band-bg">
+    <img src="gallery-3.jpg" alt="Auto glass technician Tri-Cities WA" />
+  </div>
+  <div class="cta-band-content">
+    <h2 class="reveal">Ready to Get Your Glass Fixed?</h2>
+    <p class="reveal">Call for a free quote. We'll tell you exactly what it costs and how fast we can get to you. No pressure, no surprises.</p>
+    <a href="tel:5092340000" class="btn-dark reveal">☎ Call Now — (509) 234-0000</a>
+  </div>
 </section>
 
-<!-- ── FOOTER ── -->
+<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="#" class="nav-brand" style="font-size: 1rem;">
-        <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <a href="#" class="nav-brand">
+        <svg width="30" height="30" viewBox="0 0 44 44" fill="none">
           <polygon points="22,2 40,12 40,32 22,42 4,32 4,12" fill="none" stroke="#f5a623" stroke-width="1.5"/>
-          <line x1="4" y1="12" x2="22" y2="2" stroke="#f5a623" stroke-width="1.5"/>
-          <line x1="22" y1="42" x2="4" y2="32" stroke="#f5a623" stroke-width="1.5"/>
           <rect x="17" y="13" width="10" height="2.5" fill="#f5a623" rx="0.5"/>
           <rect x="20.5" y="13" width="3" height="11" fill="#f5a623" rx="0.5"/>
         </svg>
-        <span style="color:var(--white);">TRI-CITIES <span style="color:var(--amber);">AUTO GLASS</span></span>
+        <span style="color:var(--white); font-size:1.1rem;">TRI-CITIES <span style="color:var(--amber);">AUTO GLASS</span></span>
       </a>
       <p>Mobile auto glass repair and windshield replacement serving Kennewick, Richland, Pasco, and the greater Tri-Cities area of Washington state.</p>
     </div>
@@ -945,7 +677,7 @@
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C5.2 1 3 3.2 3 6c0 3.9 5 9 5 9s5-5.1 5-9c0-2.8-2.2-5-5-5zm0 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/></svg>
         Kennewick · Richland · Pasco, WA
       </div>
-      <div class="footer-contact-item" style="margin-top: 6px;">
+      <div class="footer-contact-item">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 4v4l3 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         Mon–Sat 7am–7pm · Sun 8am–5pm
       </div>
@@ -958,27 +690,15 @@
 </footer>
 
 <script>
-  function toggleMenu() {
-    document.getElementById('mobile-menu').classList.toggle('open');
-  }
-
+  function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('open'); }
   const revealEls = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
   }, { threshold: 0.12 });
   revealEls.forEach(el => observer.observe(el));
-
   document.querySelectorAll('#mobile-menu a').forEach(a => {
-    a.addEventListener('click', () => {
-      document.getElementById('mobile-menu').classList.remove('open');
-    });
+    a.addEventListener('click', () => { document.getElementById('mobile-menu').classList.remove('open'); });
   });
 </script>
-
 </body>
 </html>
