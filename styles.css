@@ -71,7 +71,7 @@ h1{font-weight:800;font-size:clamp(2.1rem,4.4vw,3.5rem);line-height:1.05;color:#
 .sec-navy{background:#0d1b2a}
 .sec-panel{background:#162436}
 .sec-head{max-width:640px;margin-bottom:42px}
-.sec-head h2{font-weight:800;font-size:clamp(1.8rem,3.6vw,2.8rem);color:#fff;line-height:1.1;margin-bottom:14px}
+.sec-head h1,.sec-head h2{font-weight:800;font-size:clamp(1.8rem,3.6vw,2.8rem);color:#fff;line-height:1.1;margin-bottom:14px}
 .sec-head p{font-size:1.03rem;color:#8a9bb0;line-height:1.7}
 .prose{max-width:760px}
 .prose h2{font-weight:800;font-size:clamp(1.6rem,3vw,2.3rem);color:#fff;line-height:1.15;margin:38px 0 14px}
