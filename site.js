@@ -14,7 +14,7 @@
         method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body: JSON.stringify(p)
       }).catch(function(){}).then(function(){
         var card = f.closest('.qcard');
-        if(card) card.innerHTML = '<div class="qdone"><div class="ring"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4 10-10" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Request Received</h3><p class="sub">Thanks — we\'ll call you shortly with your free quote. Need it sooner? Call us now.</p><a class="btn-a" href="tel:5095090263">&#9742; Call (509) 509-0263</a></div>';
+        if(card) card.innerHTML = '<div class="qdone"><div class="ring"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4 10-10" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Request Received</h3><p class="sub">Thanks — we\'ll call you shortly with your free quote. Need it sooner? Call us now.</p><a class="btn-a" href="tel:+15095812623">&#9742; Call (509) 581-2623</a></div>';
       });
     });
   });
