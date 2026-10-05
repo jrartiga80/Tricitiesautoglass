@@ -162,3 +162,7 @@ footer{background:rgba(0,0,0,.5);border-top:1px solid rgba(255,255,255,.06);padd
  body{padding-bottom:56px}
  .sec{padding:56px 5%}
 }
+.prose .tbl{width:100%;border-collapse:collapse;margin:6px 0 22px;font-size:.95rem}
+.prose .tbl th{background:#1e3048;color:#fff;text-align:left;font-weight:700;padding:11px 14px;border-bottom:2px solid #f5a623}
+.prose .tbl td{color:#a9b8cc;padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.08);line-height:1.5}
+.prose .tbl tr:last-child td{border-bottom:0}
