@@ -168,3 +168,9 @@ footer{background:rgba(0,0,0,.5);border-top:1px solid rgba(255,255,255,.06);padd
 .prose .tbl tr:last-child td{border-bottom:0}
 
 .qcard .qbtn{display:block;text-align:center;margin:0 0 14px}
+
+.faqitem{background:#162436;border:1px solid rgba(255,255,255,.07);border-radius:8px;padding:19px 22px}
+.sec-panel .faqitem{background:#0d1b2a}
+.faqitem h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.08rem;color:#fff;margin:0 0 8px;line-height:1.3}
+.faqitem .body{font-size:.95rem;color:#8a9bb0;line-height:1.75}
+.faqitem .body a{color:#f5a623}
