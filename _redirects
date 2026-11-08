@@ -1,3 +1,7 @@
+# Send the free Cloudflare "pages.dev" address to the real domain, so Google
+# stops treating them as two separate sites and credits the real one.
+https://tricitiesautoglass.pages.dev/* https://www.tricitiesautoglass.com/:splat 301
+
 # Old-style city URLs (no -wa) to current pages
 /adas-windshield-recalibration-kennewick /adas-windshield-recalibration-kennewick-wa 301
 /adas-windshield-recalibration-kennewick/ /adas-windshield-recalibration-kennewick-wa 301
